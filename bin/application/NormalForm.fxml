@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="684.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NormalController">
+   <children>
+      <Label fx:id="addfd" layoutX="20.0" layoutY="116.0" prefHeight="31.0" prefWidth="202.0" text="Add Functional Dependencies" />
+      <Label fx:id="addre" layoutX="20.0" layoutY="65.0" prefHeight="21.0" prefWidth="202.0" text="Add Relation Elements" />
+      <TextField fx:id="re" layoutX="248.0" layoutY="60.0" />
+      <Button fx:id="removeRedundancy" layoutX="196.0" layoutY="242.0" mnemonicParsing="false" onAction="#remove_redundancy" text="Remove Redundancy" />
+      <TextArea fx:id="fd" layoutX="248.0" layoutY="98.0" prefHeight="130.0" prefWidth="187.0" wrapText="true" />
+      <Button fx:id="computeKey" layoutX="688.0" layoutY="242.0" mnemonicParsing="false" onAction="#compute_key" prefHeight="31.0" prefWidth="131.0" text="Compute Key" />
+      <TextArea fx:id="compute_key" layoutX="638.0" layoutY="83.0" prefHeight="101.0" prefWidth="231.0" promptText="your computed key will be shown here" wrapText="true" />
+      <Label fx:id="redundancy_removed_messsage" layoutX="16.0" layoutY="28.0" prefHeight="21.0" prefWidth="513.0" textFill="#04d928" />
+      <Button fx:id="calculatenormalForm" layoutX="41.0" layoutY="429.0" mnemonicParsing="false" onAction="#compute_normalform" prefHeight="56.0" prefWidth="139.0" text="Calculate highest normal form" wrapText="true" />
+      <TextArea fx:id="found_normal_form" layoutX="204.0" layoutY="429.0" prefHeight="93.0" prefWidth="150.0" promptText="your highest normal form will be displayed here" wrapText="true" />
+      <Button fx:id="decomposetable" layoutX="473.0" layoutY="416.0" mnemonicParsing="false" onAction="#normalize_table" prefHeight="82.0" prefWidth="139.0" text="Normalize to x+1 normal form" wrapText="true" />
+      <TextArea fx:id="decomposed_relation" layoutX="623.0" layoutY="386.0" prefHeight="166.0" prefWidth="304.0" promptText="your new decomposed relation will be showed here" wrapText="true" />
+      <Button fx:id="vieworignal" layoutX="183.0" layoutY="297.0" mnemonicParsing="false" onAction="#view_orignal" prefHeight="31.0" prefWidth="187.0" text="View Orignal Relation" />
+      <Button fx:id="newSearch" layoutX="411.0" layoutY="570.0" mnemonicParsing="false" onAction="#new_search" prefHeight="31.0" prefWidth="160.0" text="Begin new Search" />
+   </children>
+</AnchorPane>
